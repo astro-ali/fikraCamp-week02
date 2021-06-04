@@ -6,6 +6,9 @@ button.addEventListener("click", () => {
     if(input.value.length < 0){
         return;
     }
+    if(input.value.length === 0){
+        alert("please do not leave the input field empty")
+    }
     else{
         const li = document.createElement("li");
         li.innerHTML = input.value;
@@ -13,6 +16,10 @@ button.addEventListener("click", () => {
         input.value = "";
     }
 });
+
+const rendrTodo = () => {
+
+}
 
 // add local storage
 
